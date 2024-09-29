@@ -2,6 +2,8 @@
 
 Personalize websites with persistent custom styling and scripts.
 
+Supported browsers: Google Chrome, Firefox
+
 <br>
 
 ## How to:
