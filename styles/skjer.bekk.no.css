@@ -1,0 +1,28 @@
+/* Example file of custom domain CSS. */
+
+/* Reduce spacing in navbar. */
+._contentContainer_ykejd_85 {
+	padding: 0;
+}
+
+/* Reduce spacing in description. */
+._description_1vcz8_154 {
+	margin-top: 0;
+}
+
+/* "Meld meg av" button. */
+._subHeader_141bw_78 ~ ._tooltipHover_2gumn_79 {
+	background-color: red;
+}
+
+/* "Meld meg på" button. */
+._addParticipantContainer_141bw_105 > ._tooltipHover_2gumn_79 {
+	background-color: #63a500;
+}
+
+/* Highlight events in the feed where I'm a participant. */
+a[class^="_card"]:has( path[d="M12.0001 17.3C10.2001 17.3 8.8001 15.8 8.8001 14.1H7.6001C7.6001 16.6 9.6001 18.5 12.0001 18.5C14.4001 18.5 16.4001 16.5 16.4001 14.1H15.2001C15.2001 15.9 13.8001 17.3 12.0001 17.3Z"]):not(:hover) {
+  /* border: 5px solid yellowgreen; */
+  /* box-shadow: inset 0 0 0 2px yellowgreen; */
+  background-color: #004000;
+}
