@@ -11,6 +11,7 @@ Supported browsers: Google Chrome, Firefox
 <details>
 <summary>Google Chrome</summary>
 
+<br>
 1. Clone this repo
 2. Paste this in the search bar of Chrome `chrome://extensions`
 3. Toggle `Developer mode`
@@ -23,6 +24,7 @@ Supported browsers: Google Chrome, Firefox
 <details>
 <summary>Firefox</summary>
 
+<br>
 1. Clone this repo
 2. Paste this in the search bar of Firefox `about:debugging#/runtime/this-firefox`
 3. Load Temporary Add-On... -> select `manifest.json` in this folder
