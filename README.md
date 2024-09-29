@@ -4,7 +4,7 @@ Personalize websites with persistent custom styling and scripts.
 
 Supported browsers: Google Chrome, Firefox
 
-> For Chrome, [click here](https://github.com/emilte/chrome-extension-personalize)
+> For Firefox, [click here](https://github.com/emilte/chrome-extension-personalize/tree/firefox)
 
 <br>
 
@@ -34,7 +34,6 @@ You may also use the global css and javascript. See their README respectively.
 >
 > - `manifest.json`
 > - `content.js`
-> - `background.js`
 
 ## Why use this extension?
 

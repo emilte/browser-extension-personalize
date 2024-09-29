@@ -3,9 +3,6 @@
 	"name": "Personalize",
 	"version": "1.0",
 	"permissions": ["activeTab", "scripting"],
-	"background": {
-		"service_worker": "background.js"
-	},
 	"content_scripts": [
 		{
 			"matches": ["https://*/*"], // Load script on all files.
