@@ -4,14 +4,16 @@ Personalize websites with persistent custom styling and scripts.
 
 Supported browsers: Google Chrome, Firefox
 
+> For Chrome, [click here](https://github.com/emilte/chrome-extension-personalize)
+
 <br>
 
 ## How to:
 
 1. Clone this repo
-2. Paste this in the search bar of Chrome `chrome://extensions`
-3. Toggle `Developer mode`
-4. Load unpacked -> select this folder
+2. `git checkout firefox`
+3. Paste this in the search bar of Firefox `about:debugging#/runtime/this-firefox`
+4. Load Temporary Add-On... -> select `manifest.json` in this folder
 5. Visit https://www.example.com. You should see a green box with `The extension is working!`
 6. Start customizing (see tutorial below)
 
