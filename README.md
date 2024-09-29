@@ -1,4 +1,4 @@
-# chrome-extension-personalize
+# browser-extension-personalize
 
 Personalize websites with persistent custom styling and scripts.
 
@@ -12,12 +12,12 @@ Supported browsers: Google Chrome, Firefox
 <summary>Google Chrome</summary>
 
 <br>
-1. Clone this repo
-2. Paste this in the search bar of Chrome `chrome://extensions`
-3. Toggle `Developer mode`
-4. Load unpacked -> select this folder
-5. Visit https://www.example.com. You should see a green box with `The extension is working!`
-6. Start customizing (see tutorial below)
+1. Clone this repo <br>
+2. Paste this in the search bar of Chrome `chrome://extensions` <br>
+3. Toggle `Developer mode` <br>
+4. Load unpacked -> select this folder <br>
+5. Visit https://www.example.com. You should see a green box with `The extension is working!` <br>
+6. Start customizing (see tutorial below) <br>
 
 </details>
 
@@ -25,11 +25,11 @@ Supported browsers: Google Chrome, Firefox
 <summary>Firefox</summary>
 
 <br>
-1. Clone this repo
-2. Paste this in the search bar of Firefox `about:debugging#/runtime/this-firefox`
-3. Load Temporary Add-On... -> select `manifest.json` in this folder
-4. Visit https://www.example.com. You should see a green box with `The extension is working!`
-5. Start customizing (see tutorial below)
+1. Clone this repo <br>
+2. Paste this in the search bar of Firefox `about:debugging#/runtime/this-firefox` <br>
+3. Load Temporary Add-On... -> select `manifest.json` in this folder <br>
+4. Visit https://www.example.com. You should see a green box with `The extension is working!` <br>
+5. Start customizing (see tutorial below) <br>
 
 </details>
 
@@ -51,6 +51,8 @@ You may also use the global css and javascript. See their README respectively.
 > - `manifest.json`
 > - `content.js`
 
+<br>
+
 ## Why use this extension?
 
 Have you experienced a website where you wish the colors were slightly different? Are there elements you don't care about at all? Why not just remove them completely?
@@ -60,6 +62,3 @@ Why write a ticket to other developers about your subjective opinion, that is un
 
 The source code is open and only hosted from your local machine.
 Any updates is in your full control, no need to worry about 3rd party extensions and dependency injection (afaik).
-
-<br>
-<br>
