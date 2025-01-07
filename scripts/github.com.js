@@ -14,7 +14,8 @@ function main() {
 	const button = document.getElementById(id);
 
 	if (header && !button) {
-		addCopyButton({ el: header, url: url });
+		const btn = addCopyButton({ el: header, url: url });
+		addKeyboardShortcut({ btn, url });
 	}
 }
 
@@ -25,24 +26,44 @@ main();
 //             utils
 // ##############################
 
+function getPrTitle() {
+	return document.querySelector('bdi.js-issue-title').textContent;
+}
+
 function addCopyButton({ el, url }) {
 	const button = document.createElement('button');
-	const title = document.querySelector('bdi.js-issue-title').textContent;
+	const title = getPrTitle();
 
 	button.id = id;
-	button.textContent = '🔗 Slack';
+	button.textContent = '🔗 Share';
 	button.className = 'copy-button';
 
 	button.addEventListener('click', () => {
 		const textToCopy = `${title}\n${url}`;
 		navigator.clipboard.writeText(textToCopy);
 		const originalText = button.textContent;
-		button.textContent = 'Copied';
+		button.textContent = '✅ Copied';
 		setTimeout(() => {
 			button.textContent = originalText;
 		}, 4000);
 	});
 	el.appendChild(button);
+	return button;
+}
+
+function addKeyboardShortcut({ btn, url }) {
+	const title = getPrTitle();
+	document.addEventListener('keydown', (event) => {
+		if (event.shiftKey && event.key === 'L') {
+			const textToCopy = `${title}\n${url}`;
+			navigator.clipboard.writeText(textToCopy);
+			const originalText = btn.textContent;
+			btn.textContent = '✅ Copied';
+			setTimeout(() => {
+				btn.textContent = originalText;
+			}, 4000);
+		}
+	});
 }
 
 function observeUrlChanges() {
