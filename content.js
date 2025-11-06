@@ -8,6 +8,7 @@ function injectStylesheet(file) {
 	link.type = 'text/css';
 	link.href = chrome.runtime.getURL(file); // Must be available as web_accessible_resources.
 	(document.head || document.documentElement).appendChild(link);
+	console.log(`Looking for: ${file}`);
 }
 
 function injectScript(file) {
@@ -15,6 +16,7 @@ function injectScript(file) {
 	script.type = 'module';
 	script.src = chrome.runtime.getURL(file); // Must be available as web_accessible_resources.
 	(document.head || document.documentElement).appendChild(script);
+	console.log(`Looking for: ${file}`);
 }
 
 const DOMAIN = window.location.hostname;
