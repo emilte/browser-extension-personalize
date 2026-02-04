@@ -2,18 +2,31 @@
 	"manifest_version": 3,
 	"name": "Personalize",
 	"version": "1.0",
-	"permissions": ["activeTab", "scripting"],
+	"permissions": [
+		"activeTab",
+		"scripting"
+	],
 	"content_scripts": [
 		{
-			"matches": ["https://*/*"], // Load script on all files.
-			"js": ["content.js"] // Javascript that injects custom styling.
+			"matches": [
+				"https://*/*"
+			], // Load script on all files.
+			"js": [
+				"content.js"
+			] // Javascript that injects custom styling.
 		}
 	],
 	// Make resources fetchable in js.
 	"web_accessible_resources": [
 		{
-			"matches": ["https://*/*"],
-			"resources": ["styles/*.css", "scripts/*.js", "utils/*.js"]
+			"matches": [
+				"https://*/*"
+			],
+			"resources": [
+				"styles/*.css",
+				"scripts/*.js",
+				"utils/*.js"
+			]
 		}
 	]
 }
