@@ -60,3 +60,8 @@ Why write a ticket to other developers about your subjective opinion, that is un
 
 The source code is open and only hosted from your local machine.
 Any updates is in your full control, no need to worry about 3rd party extensions and dependency injection (afaik).
+
+
+## Known issues
+Files cannot be added through symlinked folders or as symlinks themselves. Firefox doesn't support it.
+Files must be hardlinked.
