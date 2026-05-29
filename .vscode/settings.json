@@ -1,5 +1,8 @@
 {
     "files.readonlyInclude": {
         // "**/secret/**": true
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "biomejs.biome"
     }
 }
